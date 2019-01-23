@@ -16,10 +16,10 @@ class PostsController < ApplicationController
 	  if @post.save
 		# binding.pry
 	  	redirect_to post_path(@post)
-		else 
+		else
 			render :new
 		end
-	
+
 	end
 
 	def update
